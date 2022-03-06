@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fifth Page-Form</title>
+    <meta name="description" content="Sumbiting a form" />
+    <meta name="keywords" content="Portfolio, CV, Technology, Form registration, Research" />
+    <meta name="author" content="Mubson Karki" />
+    <link rel="stylesheet" href="../css/external.css">
+    <style>
+        /* fcard indicates card used in form and the following attributes are for designing the section for writing form*/
+        .fcard{
+            border-style:solid;
+            border-color: white;
+            margin-right: 200px;
+            margin-left: 210px;
+            padding: 20px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            border-radius: 60px;
+        }
+        /* b3 is the class of send button. The position of the button is designed*/
+        .b3{
+            text-align: center;
+            margin: 10px;
+        }
+        /* b4 is the class of buttons to switch between Nepali and English. The color, size and position is designed*/
+        .b4{
+            background-color: rgb(233, 145, 31);
+            color: black;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+        /* fsend indicates the send button in form. The above b3 class was used for position where as fsend is used for 
+            desigining the font and border of the button*/
+        .fsend{
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+        
+        }
+        /*What happens when the send button is clicked*/
+        .fsend:active{
+            background-color: rgb(233, 145, 31);
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--division for desgining top part of webpage-->
+    <div class="top"><br></div>
+    <header>
+        <!--inserting name and logo-->
+        <p> <img src="../images/logo.png" alt="logo" width="50px" height="50x"> Mubson Karki <hr></p>
+    </header>
+    <!--division for creating flex of section and navigation-->
+    <div class="row">
+        <!--placing section on left side-->
+        <div class="leftcolumn">
+            <section> Contact </section>
+        </div>
+        <!--placing navigation on right side-->       
+        <div class="rightcolumn">
+            <nav>
+                <!--hide class and unique id is used for switching to nav image-->
+                <div class="hide" id="11">
+                    <a href="../homepage.html"><img src="../images/home icon.png" alt="home" width="50px" height="40px"></a><br>
+                    <a href="./CV.html"><img src="../images/cv icon.png" alt="cv" class="nimage"></a><br>
+                    <a href="./Blog.html"><img src="../images/blog icon.png" alt="blog" class="nimage"></a><br>
+                    <a href="./Research.html"><img src="../images/research icon.png" alt="research" class="nimage"></a><br>
+                    <a href="./Form.html"><img src="../images/form icon.png" alt="form" class="nimage"></a><br>
+                </div>
+                <!--this div is specified to design link-->
+                <div class="link">
+                    <!--hide class and id is used for switching to nav link-->
+                    <div class="hide" id="13" style="padding: 5px;">
+                        <a href="../homepage.html">Home</a><br><br>
+                        <a href="../html/CV.html">About</a><br><br>                    
+                        <a href="../html/Blog.html">Blog</a><br><br>
+                        <a href="../html/Research.html">Research</a><br><br>
+                        <a href="../html/Form.html">Contact</a><br><br>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--used for switching nav between image and link-->
+        <button class="b1" onclick="change()">Switch</button>
+    </div>
+    <article>
+    <!--used for desigining article part-->
+        <div class="center">
+            <!--used for desigining form within article-->
+            <div class="rcard">
+                <img src="../images/writing image.jfif" alt="image of writing" height="250px" width="750px" style="margin-top: 20px; border-radius: 40px;">
+                <h1 id="prasna">Any query?</h1><hr>
+                <!--starting of form-->
+                <form name="contactForm" onsubmit="sendForm()">
+                    <!--creates a box for writing section of form-->
+                    <div class="fcard">
+                        <!--table tag is used to provide proper structor to input box-->
+                        <table>
+                            <tr>
+                                <!--data are provided with id so that the function could be called-->
+                                <td id="naam">
+                                    First Name
+                                </td>
+                                <!--there are total three columns. this tag merges last two columns-->
+                                <td colspan="2">
+                                    <input type="text" name="fname" placeholder="eg. Mubson">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="thar">
+                                    Last Name
+                                </td>
+                                <!--mergin last two columns-->
+                                <td colspan="2">
+                                    <input type="text" name="lname" placeholder="eg. Karki">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="linga">
+                                    Gender
+                                </td>
+                                <td>
+                                    <input type="radio" name="gender" value="male" checked> <i id="purus" style="color: white;">Male</i>
+                                </td>
+                                <td>
+                                    <input type="radio" name="gender" value="female"> <i id="mahela" style="color: white;">Female</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="sthan">
+                                    Location
+                                </td>
+                                <!--merges last two column-->
+                                <td  colspan="2">
+                                    <!--creating drop down menu of location-->
+                                    <select name="group">
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="India">India</option>
+                                        <option value="UK">UK</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="USA">USA</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="email">
+                                    Email
+                                </td>
+                                <!--mergin last two column-->
+                                <td  colspan="2"> 
+                                    <input type="text" name="email" placeholder="@gmail.com">
+                                </td>
+                            </tr>
+                            </tr>
+                                <td colspan="3" id="lekhnus">
+                                    Enter your comment
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <textarea name="query" cols="40" rows="10" placeholder="Text your query here..." style="border-radius: 40px; padding: 10px;"></textarea>
+                                </td>
+                            </tr> 
+                        </table>    
+                    </div>
+                    <!--div tag is used for designing the submit button-->
+                    <div class="b3">
+                        <input type="submit" value="send" class="fsend">
+                    </div>
+                </form>
+            </div>
+            <br>
+            <!--two buttons are used for switching between Nepali and English-->
+            <button class="b4" onclick="changetoNepali()"><b>नेपाली</b></button>
+            <button class="b4" onclick="changetoEnglish()"><b>English</b></button>
+        </div>
+    </article>
+    <!--bottom part of the page containing contact info-->
+    <footer>
+        <h2>Contact me</h2>
+        Phone no  : 9843956196<br>
+        Email     : flammablekarki@gmail.com<br>
+        Address   : Kathmandu, Nepal<br>
+        <!--displays Nepali time-->
+        <h4 id='date'></h4>
+    </footer>
+
+    <script src="../js/all.js"></script>
+
+    <script>
+        function sendForm(){
+            // getting the values of data in form*/
+            var a = document.forms["contactForm"]["fname"].value;
+            var b = document.forms["contactForm"]["lname"].value;
+            var c = document.forms["contactForm"]["email"].value;
+            var d = document.forms["contactForm"]["query"].value;
+            // shows a certain alert message when all the data are given and shows another alert when not given*/
+            if (a ==""|| b=="" || c=="" || d=="")  {
+                alert("ERROR: Boxes should not be empty")
+            } else {
+                alert("Thank you! Your query has been submitted.")
+            }
+        }
+
+        // function for changing English to Nepali*/
+        function changetoNepali(){
+        var e1 = document.getElementById("naam");
+        var e2 = document.getElementById("thar");
+        var e3 = document.getElementById("linga");
+        var e4 = document.getElementById("purus");
+        var e5 = document.getElementById("mahela");
+        var e6 = document.getElementById("sthan");
+        var e7 = document.getElementById("email");
+        var e8 = document.getElementById("lekhnus");
+        var e9 = document.getElementById("prasna");
+        
+            e1.innerHTML = "नाम";
+            e2.innerHTML = "थर";
+            e3.innerHTML = "लिंग";
+            e4.innerHTML = "पुरुष"
+            e5.innerHTML = "महिला";
+            e6.innerHTML = "स्थान";
+            e7.innerHTML = "ईमेल";
+            e8.innerHTML = "तपाईंको कमेटन लेख्नुहोस्";
+            e9.innerHTML = "कुनै प्रश्न?";
+        }
+
+        // function for changing  Nepali to English*/
+        function changetoEnglish(){
+        var n1 = document.getElementById("naam");
+        var n2 = document.getElementById("thar");
+        var n3 = document.getElementById("linga");
+        var n4 = document.getElementById("purus");
+        var n5 = document.getElementById("mahela");
+        var n6 = document.getElementById("sthan");
+        var n7 = document.getElementById("email");
+        var n8 = document.getElementById("lekhnus");
+        var n9 = document.getElementById("prasna");
+
+            n1.innerHTML = "First Name";
+            n2.innerHTML = "Last Name";
+            n3.innerHTML = "Gender";
+            n4.innerHTML = "Male"
+            n5.innerHTML = "Female";
+            n6.innerHTML = "Location";
+            n7.innerHTML = "Email";
+            n8.innerHTML = "Enter your comment";
+            n9.innerHTML = "Any query?";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Referene of Islington</title>
+    <meta name="description" content="Reference taken from Islington." />
+    <meta name="keywords" content="Research, Islington, College website" />
+    <meta name="author" content="Mubson Karki" />
+    <link rel="stylesheet" type="" href="../css/external.css">
+</head>
+<body>
+    <!--division for desgining top part of webpage-->
+    <div class="top"><br></div>>
+       <header>
+            <!--inserting name and logo-->
+            <p> <img src="../images/logo.png" alt="logo" width="50px" height="50x">Mubson Karki <hr></p>
+       </header>
+    <!--division for creating flex of section and navigation-->
+    <div class="row">
+        <!--placing section on left side-->
+        <div class="leftcolumn">
+                <section>
+                        Research &gt Islington
+                </section>
+        </div>
+        <!--placing navigation on right side-->    
+        <div class="rightcolumn">
+            <nav>
+                <!--hide class and unique id is used for switching to nav image-->
+                <div class="hide" id="11">
+                    <a href="../homepage.html"><img src="../images/home icon.png" alt="home" width="50px" height="40px"></a><br>
+                    <a href="./CV.html"><img src="../images/cv icon.png" alt="cv" class="nimage"></a><br>
+                    <a href="./Blog.html"><img src="../images/blog icon.png" alt="blog" class="nimage"></a><br>
+                    <a href="./Research.html"><img src="../images/research icon.png" alt="research" class="nimage"></a><br>
+                    <a href="./Form.html"><img src="../images/form icon.png" alt="form" class="nimage"></a><br>
+                </div>
+                <!--this div is specified to design link-->
+                <div class="link">
+                    <!--hide class and id is used for switching to nav link-->
+                    <div class="hide" id="13" style="padding: 5px;">
+                        <a href="../homepage.html">Home</a><br><br>
+                        <a href="../html/CV.html">About</a><br><br>
+                        <a href="../html/Blog.html">Blog</a><br><br>
+                        <a href="../html/Research.html">Research</a><br><br>
+                        <a href="../html/Form.html">Contact</a><br><br>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--used for switching nav between image and link-->
+        <button class="b1" onclick="change()">Switch</button>  
+    </div>
+    <article>
+        <!--used for desigining article part-->
+        <div class="center">
+            <!--for making a box design in this page-->
+            <div class="rcard">
+                <a href="https://islington.edu.np/"><h1>Islington College</h1></a>  <!--Takes to official website of Islington college-->
+                <!--for maintaining video position-->
+                <div class="vid">
+                    <video width="600px" height="300px" controls> <source src="../videos/Islington-research.mp4"></video>
+                </div>
+                <p>
+                    Islington college is an educational institution situated in Kathmandu, Nepal. The college website of this institution is attractive and
+                    the feature I like the most is the toggling of pictures in its homepage. It is unique and provides visitors to switch the images instead 
+                    of placing lots of pictures in a single webpaege. Other webpages can be loaded with tons of pictures but a home page doesn't look good 
+                    when there are lots of pictures.
+                </p>
+                <p>
+                    This technique of adding toggle feature in the webpage for changing the pictures is quite impressive.The home page of this website also
+                    includes similiar feature where visitors can change the pictures through toggle button. Background of the article section contains 
+                    switchable images and a small description on it.
+                </p>
+            </div>
+        </div>
+    </article>
+    <!--bottom part of the page containing contact info-->
+    <footer>
+        <h2>Contact me</h2>
+        Phone no  : 9843956196<br>
+        Email     : flammablekarki@gmail.com<br>
+        Address   : Kathmandu, Nepal<br>
+        <!--displays Nepali time-->
+        <h4 id='date'></h4>
+    </footer>
+
+    <script src="../js/all.js"></script>
+    
+</body>
+</html>

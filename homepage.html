@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfoliio</title>
+    <meta name="description" content="Portfolio website" />
+    <meta name="keywords" content="Portfolio, CV, Technology, Form registration, Research" />
+    <meta name="author" content="Mubson Karki" />
+    <link rel="stylesheet" href="./css/external.css">
+    <style>
+        /*b2 indicates the image switch button. The structor of the button is designed*/
+        .b2{
+            text-align: center;
+            margin-top: -370px;
+        }
+        /* This is a replacement of center class as used in other pages. All three images are desineds to look same in attributes*/
+        .homechange{
+            margin-top: -210px;
+            font-size: 30px;
+            margin-left: 70px;
+            margin-right: 70px;
+            text-align: right;
+            padding: 100px;
+        }
+        /* toogle indicates the division of image switch button. The contents within the button is designed*/
+        .toggle{
+            border-radius: 80%;
+            color: rgb(255, 255, 255);
+            margin-left: 75%;
+            padding: 20px;
+            background-color: rgb(26, 27, 26);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!--division for desgining top part of webpage-->
+    <div class="top"><br></div>
+    <header>
+        <!--inserting name and logo-->
+        <p> <img src="./images/logo.png" alt="logo"  width="50px" height="50x" style="margin-right: 1px;"> Mubson Karki <hr></p>
+    </header>
+    <!--division for creating flex of section and navigation-->
+    <div class="row">
+        <!--placing section on left side-->
+        <div class="leftcolumn">
+            <section>Home Page</section>
+        </div>
+        <!--placing navigation on right side-->    
+        <div class="rightcolumn">
+            <nav>
+                <!--hide class and unique id is used for switching to nav image-->
+                <div class="hide" id="11">
+                    <a href="./homepage.html"><img src="./images/home icon.png" alt="home" width="50px" height="40px"></a><br>
+                    <a href="./html/CV.html"><img src="./images/cv icon.png" alt="cv" class="nimage"></a><br>
+                    <a href="./html/Blog.html"><img src="./images/blog icon.png" alt="blog" class="nimage"></a><br>
+                    <a href="./html/Research.html"><img src="./images/research icon.png" alt="research" class="nimage"></a><br>
+                    <a href="./html/Form.html"><img src="./images/form icon.png" alt="form" class="nimage"></a><br>
+                </div>
+                <!--this div is specified to design link-->
+                <div class="link">
+                    <!--hide class and id is used for switching to nav link-->
+                    <div class="hide" id="13" style="padding: 5px;">
+                        <a href="./homepage.html">Home</a><br><br>
+                        <a href="./html/CV.html">About</a><br><br>
+                        <a href="./html/Blog.html">Blog</a><br><br>
+                        <a href="./html/Research.html">Research</a><br><br>
+                        <a href="./html/Form.html">Contact</a><br><br>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--used for switching nav between image and link-->
+        <button class="b1" onclick="change()">Switch</button>
+    </div>
+    <article>
+        <!--div tag is used for the overal design of all three switchable images and articles-->
+        <div class="homechange">
+            <p>
+                <!--first image and article-->
+                <div  class="hide" id="30" style="background-image: url(./images/center.jpg);border-radius: 50px;"><br><br><br>
+                    
+                    <h1 style="text-align: center; font-size: 50px;">WELCOME TO MY WEBPAGE</h1>
+                    <h3 style="text-align:end; padding-right: 20px;">- &quotMotivated and hardworking youth with exemplary academic record and
+                        obsessed on solving the problems.&quot</h3><br><br>      
+                </div>
+            </p>
+            <p>
+                <!--second image and article-->
+                <div class="hide" id="32" style="background-image: url(./images/center2.jpg); border-radius: 50px;"><br><br><br>
+                    
+                    <h1 style="text-align: center; font-size: 50px;">WELCOME TO MY WEBPAGE</h1>
+                    <h3 style="text-align:end; padding-right: 20px;">- &quotMotivated and hardworking youth with exemplary academic record and 
+                    obsessed on solving the problems.&quot</h3><br><br> 
+                </div>
+            </p>
+            <p>
+                <!--third image and article-->
+                <div class="hide" id="31" style="background-image: url(./images/center3.jpg); background-size: 100% 100%; border-radius: 50px;"><br><br><br>
+                   
+                    <h1 style="text-align: center; font-size: 50px;">WELCOME TO MY WEBPAGE</h1>
+                    <h3 style="text-align:end; padding-right: 20px;">- &quotMotivated and hardworking youth with exemplary academic record and 
+                    obsessed on solving the problems.&quot</h3><br><br>  
+                </div>
+            </p>
+        </div>
+    </article>
+    <!--button for swtiching between images and articles and class b2 is used for designing the button.-->
+    <div class="b2">
+        <button class="toggle" onclick="picchange()">&gt</button>
+    </div>
+    <!--bottom part of the page containing contact info-->
+    <footer style="margin-top: 230px;">
+       <h2>Contact me</h2>
+       Phone no  : 9843956196<br>
+       Email     : flammablekarki@gmail.com<br>
+       Address   : Kathmandu, Nepal<br>
+       <!--displays Nepali time-->
+       <h4 id='date'></h4>
+    </footer>
+
+    <script src="./js/all.js"></script>
+   
+</body>
+</html>

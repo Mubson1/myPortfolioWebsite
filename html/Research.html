@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fourth Page-Research</title>
+    <meta name="description" content="Researches done for creating this webpage." />
+    <meta name="keywords" content="Portfolio, CV, Technology, Form registration, Research" />
+    <meta name="author" content="Mubson Karki" />
+    <link rel="stylesheet" href="../css/external.css">
+</head>
+<body>
+    <!--division for desgining top part of webpage-->
+    <div class="top"><br></div>
+    <header>
+        <!--inserting name and logo-->
+        <p> <img src="../images/logo.png" alt="logo" width="50px" height="50x"> Mubson Karki <hr></p>
+    </header>
+    <!--division for creating flex of section and navigation-->
+    <div class="row">
+        <!--placing section on left side-->
+        <div class="leftcolumn">
+            <section>
+                Research
+            </section>
+        </div>
+        <!--placing navigation on right side-->
+        <div class="rightcolumn">
+            <nav>
+                <!--hide class and unique id is used for switching to nav image-->
+                <div class="hide" id="11">
+                    <a href="../homepage.html"> <img src="../images/home icon.png" alt="home" width="50px" height="40px"> </a><br>
+                    <a href="./CV.html"> <img src="../images/cv icon.png" alt="cv" class="nimage"> </a><br>
+                    <a href="./Blog.html"> <img src="../images/blog icon.png" alt="blog" class="nimage"> </a><br>
+                    <a href="./Research.html"> <img src="../images/research icon.png" alt="research" class="nimage"> </a><br>
+                    <a href="./Form.html"> <img src="../images/form icon.png" alt="form" class="nimage"></a><br>
+                </div>
+                <!--this div is specified to design link-->
+                <div class="link">
+                    <!--hide class and id is used for switching to nav link-->
+                    <div class="hide" id="13" style="padding: 5px;">
+                        <a href="../homepage.html">Home</a><br><br>
+                        <a href="../html/CV.html">About</a><br><br>
+                        <a href="../html/Blog.html">Blog</a><br><br>
+                        <a href="../html/Research.html">Research</a><br><br>
+                        <a href="../html/Form.html">Contact</a><br><br>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--used for switching nav between image and link-->
+        <button class="b1" onclick="change()">Switch</button>
+    </div>
+    <!--used for desigining article part-->
+    <div class="center">
+        <article>
+            <u><h1>Websites used for creating portfolio</h1></u>
+            <!--class card2 is used for seperating different topics-->
+            <div class="card2">
+            <!--takes the clicked card to another webpage defining about research on Islington College-->
+            <a href="../html/islington.html"> <h4>Islington College</h4>
+                <p>islington.edu.np is a website of a college in Kathmandu. The way of toggling the photo in the home page looks attractive.</p>
+            </a>
+            </div>
+
+            <div class="card2">
+            <!--takes the clicked card to another webpage defining about research on South University-->
+            <a href="../html/SouthUniversity.html"><h4>South University</h4>
+                <p>South university is private university in Georgia. The news and blog page of its website has an attractive style of designing the
+                    page.
+                </p>
+            </a>
+            </div>
+
+            <div class="card2">
+            <!--takes the clicked card to another webpage defining about research on Jon Vieria-->
+            <a href="../html/logoreference.html"><h4>Jon Vieria</h4>
+                <p>Jon Vieria is a product designer. His website includes an interesting design along with his name along side. This gives website an 
+                    originality.
+                </p>
+            </a>
+            </div>
+
+            <div class="card2">
+            <!--takes the clicked card to another webpage defining about research Google-->
+            <a href="../html/googlelang.html"><h4>Google</h4>
+                <p>Google is one of the top website out there which is very user interactive. It contains the feature of language change as per the 
+                    visitor's demand.
+                </p>
+            </a>
+            </div>
+
+            <div class="card2">
+            <!--takes the clicked card to another webpage defining about research on Virgin America-->
+            <a href="../html/virgin.html"><h4>Virgin America</h4>
+                <p>Virgin America was a USA airline which operated between 2007 and 2018. Besides all it's services, the website of Virgin America has
+                    arranged different web pages in a same homepage. 
+                </p>
+            </a>
+            </div>
+        </article>
+    </div>
+    <!--bottom part of the page containing contact info-->
+    <footer>
+        <h2>Contact me</h2>
+        Phone no  : 9843956196<br>
+        Email     : flammablekarki@gmail.com<br>
+        Address   : Kathmandu, Nepal<br>
+        <!--displays Nepali time-->
+        <h5 id='date'></h5>
+    </footer>
+
+    <script src="../js/all.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Second Page-About</title>
+    <meta name="description" content="CV" />
+    <meta name="keywords" content="Portfolio, CV, Technology, Form registration, Research" />
+    <meta name="author" content="Mubson Karki" />
+    <link rel="stylesheet" href="../css/external.css">
+    <style>
+        /* designing the row into flex*/
+        .r1{
+            display: flex;
+            color: rgb(233, 145, 31);
+            font-size: 20px;
+            border-width: 10px;
+            border-style: groove;
+        }
+        /* margin of left side of the article is designed*/
+        .cleft{
+            flex: 25%;
+            margin-top: 50px;  
+        }
+        /* desigining the right side of the article*/
+        .cright{
+            flex: 70%;
+        }
+        /* designs how the parts of the article looks*/
+        .card{
+            background-color: black;
+            margin-right: 8px;
+            margin-bottom: 15px;
+            border-radius: 60px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--division for desgining top part of webpage-->
+    <div class="top"><br></div>
+    <header>
+        <!--inserting name and logo-->
+        <p> <img src="../images/logo.png" alt="logo" width="50px" height="50x">Mubson Karki <hr></p>
+    </header>
+    <!--division for creating flex of section and navigation-->
+    <div class="row">
+        <!--placing section on left side-->
+        <div class="leftcolumn">
+            <section>About</section>
+        </div>
+        <!--placing navigation on right side-->    
+        <div class="rightcolumn">
+            <nav>
+                <!--hide class and unique id is used for switching to nav image-->
+                <div class="hide" id="11">
+                    <a href="../homepage.html"><img src="../images/home icon.png" alt="home" width="50px" height="40px"></a><br>
+                    <a href="./CV.html"><img src="../images/cv icon.png" alt="cv" class="nimage"></a><br>
+                    <a href="./Blog.html"><img src="../images/blog icon.png" alt="blog" class="nimage"></a><br>
+                    <a href="./Research.html"><img src="../images/research icon.png" alt="research" class="nimage"></a><br>
+                    <a href="./Form.html"><img src="../images/form icon.png" alt="form" class="nimage"></a><br>
+                </div>
+                <!--this div is specified to design link-->
+                <div class="link">
+                    <!--hide class and id is used for switching to nav link-->
+                    <div class="hide" id="13" style="padding: 5px;">
+                        <a href="../homepage.html">Home</a><br><br>
+                        <a href="../html/CV.html">About</a><br><br>
+                        <a href="../html/Blog.html">Blog</a><br><br>
+                        <a href="../html/Research.html">Research</a><br><br>
+                        <a href="../html/Form.html">Contact</a><br><br>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--used for switching nav between image and link-->
+        <button class="b1" onclick="change()">Switch</button>
+    </div>
+    <article>
+    <!--used for desigining article part-->
+        <div class="center">
+            <!--division for creating flex of article-->
+            <div class="r1">
+                <!--placing the article on left side-->
+                <div class="cleft">
+                    <!-- card class are called for seperating article parts-->
+                    <div class="card">
+                        <h2>Mubson <br>Karki</h2>
+                        <img src="../images/profile picture.JPG" style="border-radius: 100px;" alt="profile picture" width="150px" height="200px"><br>
+                        <h3>Contact</h3><hr>
+                        Phone: <br>9843956196, 9841469098 <br><br>
+                        Address:<br> Bhadra vinayak Marg, <br> New Baneshwor, Kathmandu <br><br>
+                        Email: <br> flammablekarki@gmail.com <br><br>
+                        Linkedin: <br>MUK0424@my.londonmet.ac.uk <br><br>
+                    </div>
+
+                    <div class="card">
+                        <h3>Achievements</h3><hr>
+                        <ul>
+                            <!--making an unordered list-->
+                            <li>A+ academic qualification</li>
+                            <li>Activist in local cleanliness program.</li><br>
+                        </ul>
+                    </div>
+                
+                    <div class="card">
+                        <h3>Hobbies</h3><hr> 
+                        <ul>
+                            <li>Basketball</li>
+                            <li>Social service</li>
+                            <li>Walking</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--placing the another part of article on right side-->
+                <div class="cright">
+                    <!--used for seperating article parts-->
+                    <div class="card">
+                        <h3>About me</h3> <hr>
+                        <p> Having achieved excellent grades at NEB level along with active involvements in clubs and societies,
+                            I am keen to pursue a career in technological field. I have a proven aptitude for facing challenges and
+                            solving them which have helped for my notable achievements in studies and extra-curricular activities. <br> <br> <br>
+                        </p> 
+                    </div>
+
+                    <div class="card">
+                        <h3>Skill highlights</h3><hr>
+                        <ul style="list-style-type: circle;">
+                            <li>Mathematical aptitude</li>
+                            <li>A+ grades</li>
+                            <li>Energetic sportsman</li>
+                            <li>Knowledge in excel and database making</li>
+                            <li>Topper of school and super 40 student</li>
+                        </ul><br> <br>
+                    </div>
+            
+                    <div class="card">
+                        <h3>Education</h3><hr>
+                        <!--making an ordered list-->
+                        <ol type="a">
+                            <li>
+                                <strong>2074 BS</strong>
+                                <!--implementing nested list-->
+                                <ul>
+                                    <li>SEE, CANVAS BOARDING HIGH SCHOOL</li> 
+                                    <li>Honored as “topper of the school” with GPA 3.90 (A+) by Speaker of Parliament of Nepal, Krishna Bahadur Mahara.</li>
+                                </ul> <br>
+                            </li>
+                            <li>
+                                <strong>2077 BS</strong>
+                                <!--implementing nested list-->
+                                <ul>
+                                    <li>+2 LEVEL, HIMALAYAN WHITE HOUSE INTERNATIONAL SECONDARY SCHOOL </li>
+                                    <li>Honored as “Super 40 students” and achieved a total CGPA of 3.75 (A+). </li>
+                                </ul>
+                            </li> <br>
+                        </ol>
+                    </div>
+                
+                    <div class="card">
+                        <h3>Others</h3> <hr>
+                        <ul style="list-style-type: square;">
+                            <li>Can fluently speak Englis, Nepali and Hindi languages.</li>
+                            <li>Have managed a cafe at Baneshwor.</li>
+                            <li>Have taken extra classes for use of excel.</li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--bottom part of the page containing contact info-->
+    <footer>
+        <h2>Contact me</h2>
+        Phone no  : 9843956196<br>
+        Email     : flammablekarki@gmail.com<br>
+        Address   : Kathmandu, Nepal<br>
+        <!--displays Nepali time-->
+        <h4 id='date'></h4>
+    </footer>
+
+    <script src="../js/all.js"></script>
+
+</body>
+</html>

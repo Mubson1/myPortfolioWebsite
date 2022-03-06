@@ -1,0 +1,150 @@
+/*desigining the overall body part*/
+body{
+    background-image: url(../images/main2.jpg);
+    background-size: 100% 200%;
+    background-attachment: fixed; 
+}
+/* hides the display of the elements with this class*/
+.hide{
+    display:none;
+}
+/* designs the display of row into flex*/
+.row{
+    display: flex;
+}
+/* designs the size of left column within the row*/
+.leftcolumn{
+    flex: 80%;
+}
+/* designs the size of right column within the row*/
+.rightcolumn{
+    flex: 20%;
+}
+/* designs the logo and name in header*/
+header{
+    color: rgb(233, 145, 31);
+    font-size: 80px;
+    font-weight:900;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: -45px;
+}
+/* designs the location of webpage in section*/
+section{
+    border-radius: 60px;
+    background-color: rgb(22, 19, 19);
+    font-size: 30px;
+    color: rgb(233, 145, 31);
+    padding: 15px;
+    font-weight: 700;
+    margin-top: -65px;
+    margin-right: 20%;
+    text-align: center;
+    margin-left: 8%;
+}
+/* designs the color and position of the navigation bar*/
+nav{
+    background-color: rgb(22, 19, 19);
+    border-radius: 50px;
+    position: fixed;
+    bottom: 40%;
+    left: 92%;
+    padding: 10px;
+}
+/* designs the lower part of the webpage, footer*/
+footer{
+    background-color: rgb(233, 145, 31);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    padding-top: 10px;
+}
+/* b1 indicates the button for switching the navigation between image and link. The color, position, and font are designed*/
+.b1{
+    background-color: rgb(22, 19, 19);
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 30px;
+    position: fixed;
+    top: 61%;
+    left: 92%;
+    padding: 5px;
+    
+}
+/* Center is the division for article. The overal content is designed*/
+.center{
+    margin-left: 12%;
+    margin-right: 12%;
+    background-image: url("../images/center.jpg");
+    background-size: 100% 100%;
+    padding: 100px;
+    padding-top: 80px;
+    margin-top: -80px;
+    border-radius: 50px;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(233, 145, 31);
+    font-size: 25px;   
+}
+/* creates card or box for seperating the contents within article*/
+.card2{
+    background-color: black;
+    color: rgb(253, 253, 253);
+    border-radius: 60px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+/* link is division of the navigation link. Font, margin and text are designed*/
+.link{
+    text-align: center;
+    font-size: 18px;
+    margin-right: -10px;
+    margin-top: 11px;
+    margin-left: -15px;
+}
+/* Desigining the unvisited and visited link. Both are made the same.*/
+a:link, a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/*Desigining the link when the link is hovered upon*/
+a:hover{
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgb(233, 145, 31);
+}
+/*Desigining the link at the time of click*/
+a:active{
+    font-size: 20px;
+}
+/*Used to color the small section at the very top of website*/
+.top{
+    background-color: rgb(233, 145, 31);
+    margin-top: -20px;
+}
+/*rcard is division indicating the card in research. Desigins and seperates the contents in research*/
+.rcard{
+    background-color: black;
+    color: rgb(233, 145, 31);
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+/*Videos are placed within the links of research that will lead to another webpage. The position of video is designed */
+.vid{
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* nimage indicates the images used for navigation. Size of the navigation images are designed*/
+.nimage{
+    width: 40px;
+    height: 40px;
+}
+
+
+
